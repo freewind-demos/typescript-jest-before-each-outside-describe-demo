@@ -1,7 +1,9 @@
-TypeScript Jest Demo
+TypeScript Jest "beforeEach" Outside "describe" Demo
 ===========================
 
-使用typescript就需要在`jest.config.js`中使用`ts-jest`作为`preset`
+观察`beforeEach`放在describe前中后的行为。
+
+在describe之外的beforeEach只对当前test file有效，这跟mocha不一样
 
 ```
 npm install
